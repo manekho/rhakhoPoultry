@@ -6,6 +6,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   padding: 32px;
+  width: 100%;
 }
 
 .footer_container {
@@ -42,10 +43,29 @@
   color: #fff;
 }
 
+.designed_by_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 80%;
+}
+
+.designed_by {
+  color: gray;
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
     justify-content: center;
+    gap: 32px;
   }
 
   .footer_item {

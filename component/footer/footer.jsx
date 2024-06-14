@@ -42,6 +42,10 @@ export default function Footer() {
           </Link>
         </div>
       </div>
+      <div className={styles.designed_by_container}>
+        <hr className={styles.hr} />
+        <p className={styles.designed_by}>Designed by emanekho@gmail.com</p>
+      </div>
     </div>
   );
 }
