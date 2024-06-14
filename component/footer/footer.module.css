@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 64px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 32px;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer_item {
+  color: gray;
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.footer_item:hover {
+  color: #fff;
+}
+
+.icon {
+  font-size: 16pt;
+  color: gray;
+  transition: ease-in-out 0.2s;
+}
+
+.icon:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer_item {
+    width: fit-content;
+  }
+}
