@@ -1,17 +1,14 @@
 .slider {
-  position: relative;
-  width: 80%;
-  margin: auto;
-  padding: 40px 0;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding-bottom: 16px;
 }
 
 .imageContainer {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
+  background-color: rgba(0, 0, 0, 0.18);
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .slide {
@@ -26,24 +23,25 @@
   display: flex;
 }
 
+.image {
+  border-radius: 8px;
+}
+
 .leftArrow,
 .rightArrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
   border: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 2rem;
-  padding: 10px;
-  z-index: 10;
+  font-size: 14pt;
 }
 
 .leftArrow {
-  left: 10px;
+  margin-right: 16px;
 }
 
 .rightArrow {
-  right: 10px;
+  margin-left: 16px;
 }

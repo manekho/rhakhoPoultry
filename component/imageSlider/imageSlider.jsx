@@ -43,10 +43,11 @@ export default function ImageSlider() {
           >
             {index === current && (
               <Image
+                className={styles.image}
                 src={src}
                 alt={`Image ${index + 1}`}
-                width={250}
-                height={250}
+                width={300}
+                height={300}
               />
             )}
           </div>
