@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import ImageSlider from "@/component/imageSlider/imageSlider";
 
 export default function Home() {
   return (
@@ -12,64 +13,16 @@ export default function Home() {
           </p>
           <Image
             className={styles.background_image}
-            src={"/hero.png"}
+            src="/hero.png"
             width={250}
             height={250}
+            alt="Hero"
           />
           <button className={styles.check_button}>Check availability</button>
         </div>
       </div>
       <div className={styles.products}>Products</div>
-      <div className={styles.image_container}>
-        <Image
-          className={styles.image}
-          src={"/a.jpg"}
-          width={250}
-          height={250}
-        />
-        <Image
-          className={styles.image}
-          src={"/b.jpg"}
-          width={250}
-          height={250}
-        />
-        <Image
-          className={styles.image}
-          src={"/c.jpg"}
-          width={250}
-          height={250}
-        />
-        <Image
-          className={styles.image}
-          src={"/d.jpg"}
-          width={250}
-          height={250}
-        />
-        <Image
-          className={styles.image}
-          src={"/e.jpg"}
-          width={250}
-          height={250}
-        />
-        <Image
-          className={styles.image}
-          src={"/f.jpg"}
-          width={250}
-          height={250}
-        />
-        <Image
-          className={styles.image}
-          src={"/g.jpg"}
-          width={250}
-          height={250}
-        />
-        <Image
-          className={styles.image}
-          src={"/h.jpg"}
-          width={250}
-          height={250}
-        />
-      </div>
+      <ImageSlider />
     </>
   );
 }
