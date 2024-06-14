@@ -28,9 +28,6 @@ export default function ImageSlider() {
 
   return (
     <div className={styles.slider}>
-      <button className={styles.leftArrow} onClick={prevSlide}>
-        &#10094;
-      </button>
       <div className={styles.imageContainer}>
         {images.map((src, index) => (
           <div
@@ -46,16 +43,21 @@ export default function ImageSlider() {
                 className={styles.image}
                 src={src}
                 alt={`Image ${index + 1}`}
-                width={300}
-                height={300}
+                width={250}
+                height={250}
               />
             )}
           </div>
         ))}
       </div>
-      <button className={styles.rightArrow} onClick={nextSlide}>
-        &#10095;
-      </button>
+      <div className={styles.arrow_button_container}>
+        <button className={styles.leftArrow} onClick={prevSlide}>
+          &#10094;
+        </button>
+        <button className={styles.rightArrow} onClick={nextSlide}>
+          &#10095;
+        </button>
+      </div>
     </div>
   );
 }
