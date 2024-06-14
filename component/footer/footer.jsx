@@ -25,19 +25,20 @@ export default function Footer() {
       </div>
       <div className={styles.footer_container}>
         <h4>Follow us</h4>
-        <div className={styles.footer_item}>
+        <div className={styles.icon_container}>
           <Link
+            className={styles.icon}
             href={
               "https://www.instagram.com/poultry_feeds_dmp?igsh=MXA4MGZiOZM5MWh6Yg=="
             }
           >
-            <FaInstagramSquare className={styles.icon} />
+            <FaInstagramSquare />
           </Link>
-          <Link href="#">
-            <FaFacebookSquare className={styles.icon} />
+          <Link className={styles.icon} href="#">
+            <FaFacebookSquare />
           </Link>
-          <Link href="#">
-            <FaSquareXTwitter className={styles.icon} />
+          <Link className={styles.icon} href="#">
+            <FaSquareXTwitter />
           </Link>
         </div>
       </div>
