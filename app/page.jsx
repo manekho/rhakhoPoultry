@@ -9,6 +9,12 @@ export default function Home() {
           All types of poultry, cattle and piggery feeds available at wholesale
           price
         </p>
+        <Image
+          className={styles.background_image}
+          src={"/hero.png"}
+          width={250}
+          height={250}
+        />
         <button className={styles.check_button}>Check availability</button>
       </div>
     </div>

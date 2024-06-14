@@ -13,8 +13,8 @@ export default function Header() {
 
   return (
     <div className={styles.container}>
-      <Link className={styles.logo} href={"#"}>
-        Company logo
+      <Link className={styles.logo} href={"/"}>
+        Rhakho
       </Link>
       <div className={styles.link_container}>
         <Link className={styles.link} href={"#"}>
